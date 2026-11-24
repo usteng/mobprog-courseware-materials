@@ -1,0 +1,33 @@
+name: m02_widgets_demo
+description: "MOBPROG Module 02 demo: widgets, layout, lists, and Material 3."
+publish_to: 'none'
+version: 1.0.0+1
+
+# Dart 3.6 ships with Flutter 3.27, the first release with Row(spacing:).
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# Slide: "Declaring Assets in pubspec.yaml". Indentation matters in YAML.
+flutter:
+  uses-material-design: true
+
+  # A folder entry includes every file directly inside it. Flutter also picks
+  # up the 2.0x/ and 3.0x/ variants of logo.png for sharper screens.
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: IBM Plex Sans
+      fonts:
+        - asset: fonts/IBMPlexSans-Regular.ttf
+        - asset: fonts/IBMPlexSans-Bold.ttf
+          weight: 700
